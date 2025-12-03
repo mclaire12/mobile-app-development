@@ -98,8 +98,7 @@
 
                     <ImageView
                         android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:scaleType="centerCrop"
+                        android:layout_height="match_parent" android:scaleType="centerCrop"
                         android:src="@drawable/room1"
                         android:contentDescription="Deluxe Room" />
 
@@ -200,8 +199,7 @@
 
                     <ImageView
                         android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:scaleType="centerCrop"
+                        android:layout_height="match_parent" android:scaleType="centerCrop"
                         android:src="@drawable/room2"
                         android:contentDescription="Suite Room" />
 
@@ -302,8 +300,7 @@
 
                     <ImageView
                         android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:scaleType="centerCrop"
+                        android:layout_height="match_parent" android:scaleType="centerCrop"
                         android:src="@drawable/room3"
                         android:contentDescription="Grande Room" />
 
