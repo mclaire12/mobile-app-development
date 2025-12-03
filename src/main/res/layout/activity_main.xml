@@ -8,7 +8,6 @@
     android:background="@drawable/backgroundimage"
     tools:context=".MainActivity">
 
-    <!-- Toolbar -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -48,7 +47,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"/>
 
-             <FrameLayout
+            <FrameLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
@@ -62,12 +61,11 @@
                     android:src="@android:drawable/ic_menu_recent_history"
                     android:tint="@android:color/white"
                     android:contentDescription="History" />
-             </FrameLayout>
+            </FrameLayout>
         </RelativeLayout>
-            
+
     </androidx.appcompat.widget.Toolbar>
 
-    <!-- ScrollView for Rooms -->
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -85,7 +83,6 @@
             android:paddingTop="8dp"
             android:paddingBottom="8dp">
 
-            <!-- Room 1 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -172,21 +169,22 @@
 
                         </LinearLayout>
 
-                        <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="36dp"
+                        <com.google.android.material.button.MaterialButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
                             android:layout_marginTop="8dp"
-                            android:backgroundTint="#9e9e9e"
+                            android:layout_gravity="end"
+                            app:backgroundTint="#9e9e9e"
+                            app:cornerRadius="2dp"
                             android:text="Remove"
                             android:textAllCaps="false"
                             android:textColor="@android:color/white"
-                            android:insetTop="0dp"
-                            android:insetBottom="0dp"/>
+                            android:paddingStart="48dp"
+                            android:paddingEnd="48dp" />
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Room 2 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -273,21 +271,22 @@
 
                         </LinearLayout>
 
-                        <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="36dp"
+                        <com.google.android.material.button.MaterialButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
                             android:layout_marginTop="8dp"
-                            android:backgroundTint="#9e9e9e"
+                            android:layout_gravity="end"
+                            app:backgroundTint="#9e9e9e"
+                            app:cornerRadius="2dp"
                             android:text="Remove"
                             android:textAllCaps="false"
                             android:textColor="@android:color/white"
-                            android:insetTop="0dp"
-                            android:insetBottom="0dp"/>
+                            android:paddingStart="48dp"
+                            android:paddingEnd="48dp" />
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-             <!-- Room 3 (Grande Room) -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -374,23 +373,24 @@
 
                         </LinearLayout>
 
-                        <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="36dp"
+                        <com.google.android.material.button.MaterialButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
                             android:layout_marginTop="8dp"
-                            android:backgroundTint="#9e9e9e"
+                            android:layout_gravity="end"
+                            app:backgroundTint="#9e9e9e"
+                            app:cornerRadius="2dp"
                             android:text="Remove"
                             android:textAllCaps="false"
                             android:textColor="@android:color/white"
-                            android:insetTop="0dp"
-                            android:insetBottom="0dp"/>
+                            android:paddingStart="48dp"
+                            android:paddingEnd="48dp" />
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
     </ScrollView>
 
-    <!-- Sticky Area containing Dates, Total, and Footer -->
     <LinearLayout
         android:id="@+id/sticky_area"
         android:layout_width="match_parent"
@@ -399,8 +399,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
-        
-        <!-- Dates Row -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -459,7 +458,6 @@
             android:layout_height="1dp"
             android:background="#e0e0e0" />
 
-        <!-- Total and Book Row -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -513,10 +511,10 @@
                 android:textSize="16sp"
                 android:minHeight="40dp"
                 android:insetTop="0dp"
-                android:insetBottom="0dp"/>
+                android:insetBottom="0dp"
+                app:cornerRadius="2dp"/>
         </LinearLayout>
 
-        <!-- Bottom Navigation -->
         <LinearLayout
             android:id="@+id/bottom_nav"
             android:layout_width="match_parent"
@@ -532,7 +530,7 @@
                 android:src="@drawable/ic_calendar"
                 android:scaleType="centerInside"
                 android:contentDescription="Calendar" />
-            
+
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
@@ -546,7 +544,7 @@
                 android:src="@drawable/ic_cart"
                 android:scaleType="centerInside"
                 android:contentDescription="Cart" />
-                
+
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
@@ -565,8 +563,8 @@
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
                 android:background="#a1887f" />
-                
-             <ImageButton
+
+            <ImageButton
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -574,13 +572,13 @@
                 android:src="@drawable/ic_percent"
                 android:scaleType="centerInside"
                 android:contentDescription="Percent" />
-                
+
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
                 android:background="#a1887f" />
-                
-             <ImageButton
+
+            <ImageButton
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
