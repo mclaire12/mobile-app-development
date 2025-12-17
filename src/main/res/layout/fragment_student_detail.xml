@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/background_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_medium">
+
+        <!-- Student Photo -->
+        <ImageView
+            android:id="@+id/imageView_detail_photo"
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin_medium"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/student_photo" />
+
+        <!-- Student Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/student_name"
+            style="@style/TextLabel" />
+
+        <TextView
+            android:id="@+id/textView_detail_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/text_primary"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:padding="@dimen/padding_small" />
+
+        <!-- Student ID -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/student_id"
+            style="@style/TextLabel" />
+
+        <TextView
+            android:id="@+id/textView_detail_student_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/text_primary"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:padding="@dimen/padding_small" />
+
+        <!-- Enrollment Date -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enrollment_date"
+            style="@style/TextLabel" />
+
+        <TextView
+            android:id="@+id/textView_detail_enrollment_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/text_primary"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:padding="@dimen/padding_small" />
+
+        <!-- Department -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/department"
+            style="@style/TextLabel" />
+
+        <TextView
+            android:id="@+id/textView_detail_department"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/text_primary"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:padding="@dimen/padding_small" />
+
+        <!-- Status -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status"
+            style="@style/TextLabel" />
+
+        <TextView
+            android:id="@+id/textView_detail_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/text_primary"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:padding="@dimen/padding_small" />
+
+        <!-- Courses Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/courses"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginBottom="@dimen/margin_medium" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_courses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/margin_large"
+            android:src="@android:drawable/ic_input_add"
+            android:contentDescription="@string/add_course"
+            app:backgroundTint="@color/primary_color"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

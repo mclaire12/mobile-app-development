@@ -26,6 +26,8 @@ public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.StudentV
         void onEditClick(Student student);
 
         void onDeleteClick(Student student);
+
+        void onViewClick(Student student);
     }
 
     public StudentAdapter(List<Student> students, OnStudentClickListener listener) {
@@ -72,6 +74,13 @@ public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.StudentV
         holder.buttonDelete.setOnClickListener(v -> {
             if (listener != null) {
                 listener.onDeleteClick(student);
+            }
+        });
+
+        // Add click listener to entire item for view details
+        holder.itemView.setOnClickListener(v -> {
+            if (listener != null) {
+                listener.onViewClick(student);
             }
         });
     }

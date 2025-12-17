@@ -74,6 +74,17 @@ public class StudentListFragment extends Fragment {
                     loadStudents();
                 }
             }
+
+            @Override
+            public void onViewClick(Student student) {
+                Bundle args = new Bundle();
+                args.putLong("student_id", student.getId());
+                StudentDetailFragment detailFragment = new StudentDetailFragment();
+                detailFragment.setArguments(args);
+                if (getActivity() instanceof Activity3) {
+                    ((Activity3) getActivity()).loadFragment(detailFragment, true);
+                }
+            }
         });
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));

@@ -31,7 +31,16 @@
     <string name="grade_hint">Enter grade (0-100)</string>
     <string name="course_date">Course Date</string>
     <string name="add_course">Add Course</string>
+    <string name="edit_course">Edit Course</string>
     <string name="courses">Courses</string>
+    <string name="no_courses">No courses found</string>
+    <string name="course_saved">Course saved successfully</string>
+    <string name="course_deleted">Course deleted successfully</string>
+    <string name="view_details">View Details</string>
+    <string name="student_details">Student Details</string>
+    <string name="status">Status</string>
+    <string name="active">Active</string>
+    <string name="inactive">Inactive</string>
     
     <!-- Departments -->
     <string name="dept_computer_science">Computer Science</string>
