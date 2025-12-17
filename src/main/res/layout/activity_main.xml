@@ -526,6 +526,7 @@
                 android:background="?attr/selectableItemBackground"
                 android:src="@drawable/ic_calendar"
                 android:scaleType="centerInside"
+                android:tint="@android:color/white"
                 android:contentDescription="Calendar" />
 
             <View
@@ -540,6 +541,7 @@
                 android:background="?attr/selectableItemBackground"
                 android:src="@drawable/ic_cart"
                 android:scaleType="centerInside"
+                android:tint="@android:color/white"
                 android:contentDescription="Cart" />
 
             <View
@@ -554,6 +556,7 @@
                 android:background="?attr/selectableItemBackground"
                 android:src="@drawable/ic_home"
                 android:scaleType="centerInside"
+                android:tint="@android:color/white"
                 android:contentDescription="Home" />
 
             <View
@@ -568,6 +571,7 @@
                 android:background="?attr/selectableItemBackground"
                 android:src="@drawable/ic_percent"
                 android:scaleType="centerInside"
+                android:tint="@android:color/white"
                 android:contentDescription="Percent" />
 
             <View
@@ -582,6 +586,7 @@
                 android:background="?attr/selectableItemBackground"
                 android:src="@drawable/ic_phone"
                 android:scaleType="centerInside"
+                android:tint="@android:color/white"
                 android:contentDescription="Contact" />
 
         </LinearLayout>

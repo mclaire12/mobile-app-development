@@ -3,8 +3,10 @@ package com.example.agniment22;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 
 import androidx.activity.EdgeToEdge;
@@ -49,5 +51,24 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        
+        // Add navigation to Activity3 from bottom navigation (home button - 3rd button, index 2)
+        View bottomNav = findViewById(R.id.bottom_nav);
+        if (bottomNav instanceof ViewGroup) {
+            ViewGroup bottomNavGroup = (ViewGroup) bottomNav;
+            // Home button is the 3rd button (index 2)
+            if (bottomNavGroup.getChildCount() > 2) {
+                View homeBtn = bottomNavGroup.getChildAt(2);
+                if (homeBtn instanceof ImageButton) {
+                    homeBtn.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(MainActivity.this, Activity3.class);
+                            startActivity(intent);
+                        }
+                    });
+                }
+            }
+        }
     }
 }

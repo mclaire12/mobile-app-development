@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Button Styles -->
+    <style name="ButtonPrimary">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:background">@color/button_background</item>
+        <item name="android:textColor">@color/button_text</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">@dimen/margin_medium</item>
+    </style>
+    
+    <style name="ButtonSecondary">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:background">@color/divider_color</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:layout_margin">@dimen/margin_medium</item>
+    </style>
+    
+    <!-- Text Styles -->
+    <style name="TextTitle">
+        <item name="android:textSize">@dimen/text_size_title</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">@dimen/margin_medium</item>
+    </style>
+    
+    <style name="TextLabel">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/margin_medium</item>
+        <item name="android:layout_marginStart">@dimen/margin_medium</item>
+    </style>
+    
+    <style name="TextBody">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+    
+    <!-- EditText Style -->
+    <style name="EditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/edit_text_height</item>
+        <item name="android:padding">@dimen/padding_medium</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:layout_marginHorizontal">@dimen/margin_medium</item>
+        <item name="android:background">@android:drawable/edit_text</item>
+    </style>
+    
+    <!-- Card Style -->
+    <style name="CardStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margin_medium</item>
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardBackgroundColor">@color/card_background</item>
+    </style>
+</resources>

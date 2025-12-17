@@ -1,3 +1,52 @@
 <resources>
     <string name="app_name">Agniment22</string>
+    
+    <!-- Activity3 Strings -->
+    <string name="activity3_title">Student Management</string>
+    <string name="add_student">Add Student</string>
+    <string name="edit_student">Edit Student</string>
+    <string name="student_list">Student List</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    
+    <!-- Form Labels -->
+    <string name="student_name">Student Name</string>
+    <string name="student_name_hint">Enter student name</string>
+    <string name="enrollment_date">Enrollment Date</string>
+    <string name="select_date">Select Date</string>
+    <string name="student_id">Student ID</string>
+    <string name="student_id_hint">Enter student ID</string>
+    <string name="is_active">Active Student</string>
+    <string name="department">Department</string>
+    <string name="select_department">Select Department</string>
+    <string name="student_photo">Student Photo</string>
+    <string name="select_photo">Select Photo</string>
+    
+    <!-- Course Form Labels -->
+    <string name="course_name">Course Name</string>
+    <string name="course_name_hint">Enter course name</string>
+    <string name="grade">Grade</string>
+    <string name="grade_hint">Enter grade (0-100)</string>
+    <string name="course_date">Course Date</string>
+    <string name="add_course">Add Course</string>
+    <string name="courses">Courses</string>
+    
+    <!-- Departments -->
+    <string name="dept_computer_science">Computer Science</string>
+    <string name="dept_mathematics">Mathematics</string>
+    <string name="dept_physics">Physics</string>
+    <string name="dept_chemistry">Chemistry</string>
+    <string name="dept_biology">Biology</string>
+    
+    <!-- Messages -->
+    <string name="student_saved">Student saved successfully</string>
+    <string name="student_deleted">Student deleted successfully</string>
+    <string name="fill_all_fields">Please fill all required fields</string>
+    <string name="no_students">No students found</string>
+    <string name="delete_confirmation">Are you sure you want to delete this student?</string>
+    
+    <!-- Navigation -->
+    <string name="nav_database">Database</string>
 </resources>
