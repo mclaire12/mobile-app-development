@@ -26,7 +26,7 @@ public class SecondActivity extends AppCompatActivity {
         }
 
         ListView listView = findViewById(R.id.simpleListView);
-        String[] items = {"Item 1", "Item 2", "Item 3", "Item 4", "Item 5"};
+        String[] items = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);
         listView.setAdapter(adapter);
     }

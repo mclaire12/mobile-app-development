@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         // Setup Spinners for Date (Mock data)
         Spinner checkInSpinner = findViewById(R.id.spinner_checkin);
         Spinner checkOutSpinner = findViewById(R.id.spinner_checkout);
-        String[] dates = {"9/16/2015", "9/17/2015", "9/18/2015"};
+        String[] dates = { "9/16/2015", "9/17/2015", "9/18/2015" };
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, dates);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         checkInSpinner.setAdapter(adapter);
@@ -51,8 +51,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        
-        // Add navigation to Activity3 from bottom navigation (home button - 3rd button, index 2)
+
+        // Add navigation to Activity3 from bottom navigation (home button - 3rd button,
+        // index 2)
         View bottomNav = findViewById(R.id.bottom_nav);
         if (bottomNav instanceof ViewGroup) {
             ViewGroup bottomNavGroup = (ViewGroup) bottomNav;
