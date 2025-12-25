@@ -16,4 +16,14 @@
     <color name="success_color">#388E3C</color>
     <color name="button_background">#3949ab</color>
     <color name="button_text">#FFFFFF</color>
+    
+    <!-- Product Management Colors -->
+    <color name="primary">#4CAF50</color>
+    <color name="primary_blue">#1976D2</color>
+    <color name="primary_green">#4CAF50</color>
+    <color name="primary_red">#D32F2F</color>
+    <color name="accent_orange">#FF9800</color>
+    <color name="bottom_nav_selected">#1976D2</color>
+    <color name="bottom_nav_unselected">#757575</color>
+    <color name="gray_light">#E0E0E0</color>
 </resources>

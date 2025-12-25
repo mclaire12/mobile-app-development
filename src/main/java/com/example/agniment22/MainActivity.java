@@ -16,6 +16,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.assignment4.ProductManagementActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -65,6 +67,20 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             Intent intent = new Intent(MainActivity.this, Activity3.class);
+                            startActivity(intent);
+                        }
+                    });
+                }
+            }
+            
+            // Add navigation to Product Management (6th button - index 10, counting separators)
+            if (bottomNavGroup.getChildCount() > 10) {
+                View productBtn = bottomNavGroup.getChildAt(10);
+                if (productBtn instanceof ImageButton) {
+                    productBtn.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(MainActivity.this, ProductManagementActivity.class);
                             startActivity(intent);
                         }
                     });

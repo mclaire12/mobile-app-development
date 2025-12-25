@@ -16,3 +16,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "java-mobile-app"
 
+
+
+

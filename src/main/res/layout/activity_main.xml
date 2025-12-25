@@ -589,6 +589,21 @@
                 android:tint="@android:color/white"
                 android:contentDescription="Contact" />
 
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#a1887f" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:src="@android:drawable/ic_menu_view"
+                android:scaleType="centerInside"
+                android:tint="@android:color/white"
+                android:contentDescription="Products" />
+
         </LinearLayout>
     </LinearLayout>
 
